@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Records</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center><h2>Student Records</h2></center>
+    <!-- TABLE -->
+    <table>
+        <!-- --Row-1-- -->
+        <tr>
+            <!-- --Column-1-- -->
+            <td>
+
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                <h3>Student Form</h3>
+                <div>
+                    <label>Full Name</label>
+                    <label class="validationError hide" id="nameValidationError">This Field is Required</label>
+                    <input type="text" name="name" class="sname" id="stuName" placeholder="Student Name">
+                </div>
+                <div>
+                    <label>Register Number</label>
+                    <label class="validationError hide" id="regValidationError">This Field is Required</label>
+                    <input type="number" name="regno" class="sreg" id="stuReg" placeholder="Student Reg.No">
+                </div>
+                <div>
+                    <label>Class</label>
+                    <label class="validationError hide" id="classValidationError">This Field is Required</label>
+                    <input type="text" name="class" class="sclass" id="stuClass" placeholder="Student Class">
+                </div>
+                <div>
+                    <label>Section</label>
+                    <label class="validationError hide" id="secValidationError">This Field is Required</label>
+                    <input type="text" name="sec" class="ssec" id="stuSec" placeholder="Student Section">
+                </div>
+                <div>
+                    <label>Age</label>
+                    <label class="validationError hide" id="ageValidationError">This Field is Required</label>
+                    <input type="number" name="age" class="sage" id="stuAge" placeholder="Student Age">
+                </div>
+                <div>
+                    <label>Total Marks</label>
+                    <label class="validationError hide" id="markValidationError">This Field is Required</label>
+                    <input type="number" name="mark" class="smark" id="stuMark" placeholder="Student Total Mark">
+                </div>
+                <div class="form-action-buttons">
+                    <input type="submit" value="Submit">
+                </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="stuList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Reg No</th>
+                            <th>Class</th>
+                            <th>Section</th>
+                            <th>Age</th>
+                            <th>Total Mark</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                    </tbody>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,71 @@
+
+body > table{
+    width: 100%;
+}
+
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+table.list{
+    width: 100%;
+    text-align: center;
+}
+table.list td{
+    text-align: center;
+}
+
+td, th{
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even),table.list thead tr{
+    background-color: #dddddd;
+}
+
+input[type =text], input[type =number]{
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    
+} 
+
+input[type=submit]{
+    width: 30%;
+    background-color: yellowgreen;
+    padding: 12px 20px;
+    margin: 8px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+form{
+    background: #eeec69;
+    padding: 10px;
+}
+
+.form-action-buttons{
+    text-align: center;
+}
+
+.validationError{
+    color: red;
+    margin-left: 15px;
+}
+a{
+    color: royalblue;
+    cursor: pointer;
+    padding: 5px;
+}
+.hide{
+    display: none;
+}
